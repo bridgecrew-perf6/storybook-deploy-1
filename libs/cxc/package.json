@@ -1,0 +1,12 @@
+{
+    "name": "cxc",
+    "version": "0.0.0",
+    "license": "MIT",
+    "scripts": {
+        "build-storybook-output":"npx build-storybook -o testing",
+        "deploy-storybook-to-pages": "npx -p @storybook/storybook-deployer storybook-to-ghpages -e testing",
+        "deploy-storybook": "npm run build-storybook-output && npm run deploy-storybook-to-pages"
+    },
+    "private": true
+  }
+  
